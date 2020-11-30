@@ -2,11 +2,12 @@
 	box-sizing: border-box;
 }
 body{
-	background-color: rgb(184, 159, 163);
+	
 	padding: 0px;
 }
 header{
 	text-align: center;
+	color: rgb(147, 228, 17);
 	padding: 15px;
 	margin-top:0px ;
 }
