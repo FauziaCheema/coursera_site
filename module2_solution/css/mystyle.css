@@ -2,25 +2,50 @@
 	box-sizing: border-box;
 }
 body{
-	background-color: pink
+	background-color: pink;
+	padding: 20px;
 }
 header{
 	text-align: center;
+	padding: 50px;
 }
 .sub-menue{
-	background-color: blue;
+	background-color: lightgrey;
 	border: solid 2px red;
 	width: 30%;
 	float:left;
-	padding: 15px 10px 5px 10px;
-	margin-left: 20px;
-	position: relative;
+	padding: 5px 10px 5px 10px;
+	margin-left: 10px;
+	
 }
 .inner-heading{
 	background-color: cornsilk;
 	border: solid 2px black;
 	padding: 5px;
 	width: 100px;
-	position: absolute;
+	float: right;
 	
 }
+p{
+	clear:right;
+}
+
+/* On screens that are 992px wide or less, go from four columns to two columns */
+@media screen and (max-width: 992px) {
+	#div1 {
+	  width: 47%;
+	}
+	#div2{
+		width:47%;
+	}
+	#div3{
+		width:100%
+	}
+  }
+  
+  /* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+	.sub-menue {
+	  width: 100%;
+	}
+  }
